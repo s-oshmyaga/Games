@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ Начальное окно с предложением выбрать игру """
 
 from tkinter import *

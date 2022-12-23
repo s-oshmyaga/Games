@@ -84,6 +84,7 @@ def start_game():
     lbl_word['text'] = ' '.join(result)
     lbl_stages(user_mistakes)
     enr_letter.delete(0, END)
+    btn_enter.config(state='normal')
 
 
 def check(character):
@@ -104,6 +105,7 @@ def check(character):
         user_mistakes += 1
         if user_mistakes == 7:
             lbl_message['text'] = 'Вы проиграли'
+            lbl_word['text'] = ' '.join(word_choice)
             btn_enter.config(state='disabled')
     lbl_stages(user_mistakes)
     enr_letter.delete(0, END)
